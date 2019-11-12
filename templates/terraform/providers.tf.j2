@@ -1,0 +1,36 @@
+# Configure the Microsoft Azure Provider
+
+data "vault_generic_secret" "azure_secret_id" {
+  path = "secret/azure"
+}
+
+provider "vault" {
+  auth_login {
+    path = "auth/userpass/login/${var.USER}"
+    parameters = {
+      password = var.USER_PASS
+    }
+  }
+}
+
+
+
+provider "azurerm" {
+  version         = "~> 1.33"
+  subscription_id = var.subsid
+  client_id       = var.clientid
+  client_secret   = "${data.vault_generic_secret.azure_secret_id["client_secret"]}"
+  tenant_id       = var.tenantid
+}
+
+terraform {
+    backend "azurerm" {
+    resource_group_name  = "{{ AZURE_RESOURCE_GROUP }}"
+    storage_account_name = "{{ STORAGE_ACCOUNT_NAME }}"
+    container_name       = "{{ AZURE_CONTAINER_NAME }}"
+    key                  = "{{ AZURE_KEY}}"
+    access_key           = "{{ ACCESS_KEY }}"
+    }
+}
+
+

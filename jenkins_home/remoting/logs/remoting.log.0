@@ -1,0 +1,27 @@
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: slave-linux
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+Nov 11, 2019 9:24:57 AM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 3.29
+Nov 11, 2019 9:24:57 AM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using /home/antonio/work/devel/jenkins/limitlessgames/jenkins-slave-jnlp/jenkins_home/remoting as a remoting work directory
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Locating server among [http://jenkins.limitlessgames.cloud:8080/]
+Nov 11, 2019 9:24:57 AM org.jenkinsci.remoting.engine.JnlpAgentEndpointResolver resolve
+INFO: Remoting server accepts the following protocols: [JNLP4-connect, Ping]
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Agent discovery successful
+  Agent address: jenkins.limitlessgames.cloud
+  Agent port:    50000
+  Identity:      60:78:fe:be:42:0a:77:e8:46:d3:1e:4b:76:1a:00:e2
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Handshaking
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connecting to jenkins.limitlessgames.cloud:50000
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Trying protocol: JNLP4-connect
+Nov 11, 2019 9:24:57 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Remote identity confirmed: 60:78:fe:be:42:0a:77:e8:46:d3:1e:4b:76:1a:00:e2
+Nov 11, 2019 9:24:58 AM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected

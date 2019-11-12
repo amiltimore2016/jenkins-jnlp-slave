@@ -1,0 +1,5 @@
+USER=devopsuser
+USER_PASS=""
+VAULT_ADDR=http://llgames-vault.westeurope.azurecontainer.io:8200
+MASTER_URL=jenkins.limitlessgames.cloud:8080
+
